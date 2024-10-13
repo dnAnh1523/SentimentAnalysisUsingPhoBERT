@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vietnamese Sentiment Analysis</h1>
+        <div class="input-button-container">
+            <div class="form-control">
+                <input class="input input-alt" id="input-text" placeholder="Nhập văn bản cần phân tích..." required type="text">
+                <span class="input-border input-border-alt"></span>
+            </div>
+            <div class="buttons">
+                <button id="analyze-btn" class="btn2"><span class="spn2">Analysis</span></button>
+                <button id="reset-btn" class="btn2"><span class="spn2">New analysis</span></button>
+            </div>            
+        </div>
+        <div id="result" class="hidden">
+            <h2>Kết quả:</h2>
+            <p>Cảm xúc: <span id="sentiment"></span></p>
+            <p>Xác suất:</p>
+            <ul>
+                <li>Tiêu cực: <span id="negative"></span></li>
+                <li>Trung tính: <span id="neutral"></span></li>
+                <li>Tích cực: <span id="positive"></span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
